@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | FabScientist</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #ffc0cb, #ffdee9);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 🌟 NAVIGATION BAR */
+    nav {
+      background-color: purple;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700; /* gold hover effect */
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    /* 🌟 HEADER */
+    h1 {
+      font-size: 3em;
+      color: navy;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+      animation: pop 1s ease-in-out;
+      margin-top: 40px;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h2 {
+      color: #222;
+      background: rgba(255,255,255,0.8);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-top: 10px;
+    }
+
+    /* 🌟 CONTACT FORM SECTION */
+    .contact-container {
+      background: rgba(255,255,255,0.6);
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 20px;
+      width: 85%;
+      max-width: 800px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .contact-container:hover {
+      box-shadow: 0 0 25px rgba(255,255,255,0.8);
+      transform: scale(1.01);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 80%;
+      max-width: 500px;
+      padding: 10px 15px;
+      border: 2px solid navy;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: purple;
+      box-shadow: 0 0 10px rgba(128, 0, 128, 0.3);
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    button {
+      background-color: navy;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: darkblue;
+      transform: scale(1.05);
+    }
+
+    /* 🌟 CONTACT INFO */
+    .contact-info {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 14px;
+      color: #333;
+      background: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🌟 NAVIGATION BAR -->
+  <nav>
+    <div class="logo">FabScientist</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topics.html">Topics</a></li>
+      <li><a href="scienceandphilosophy.html">Science and philosophy</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🌟 HEADER -->
+  <h1>Contact FabScientist</h1>
+  <h2>We’d love to hear from you!</h2>
+
+  <!-- 🌟 CONTACT FORM -->
+  <div class="contact-container">
+    <p>Got a question, suggestion, or collaboration idea? Drop us a message below — we’ll get back to you as soon as possible!</p>
+
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📧 Email: <strong>info@fabscientist.com</strong></p>
+      <p>📍 Location: Science City, Earth 🌍</p>
+      <p>🕒 Office Hours: Mon–Fri, 9:00 AM – 6:00 PM</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 FabScientist | Inspiring curiosity through science
+  </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Science Topics | FabScientist</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #ffc0cb, #ffdee9);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 🌟 NAVIGATION BAR */
+    nav {
+      background-color: purple;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700; /* gold hover effect */
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    /* 🌟 HEADER */
+    h1 {
+      font-size: 3em;
+      color: navy;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+      animation: pop 1s ease-in-out;
+      margin-top: 40px;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h2 {
+      color: #222;
+      background: rgba(255,255,255,0.8);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-top: 10px;
+    }
+
+    section {
+      background: rgba(255,255,255,0.6);
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 20px;
+      width: 85%;
+      max-width: 900px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(255,255,255,0.8);
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    ul li a {
+      color: navy;
+      font-weight: bold;
+      text-decoration: none;
+      background: rgba(255,255,255,0.7);
+      padding: 8px 15px;
+      border-radius: 10px;
+      display: inline-block;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    ul li a:hover {
+      background: gold;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 14px;
+      color: #333;
+      background: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🌟 NAVIGATION BAR -->
+  <nav>
+    <div class="logo">FabScientist</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topics.html">Topics</a></li>
+      <li><a href="scienceandphilosophy.html">Science and Philosophy</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🌟 HEADER -->
+  <h1>Explore Science Topics</h1>
+  <h2>Dive into the world of discovery and curiosity!</h2>
+
+  <!-- 🌟 TOPIC SECTIONS -->
+  <section id="Scienceexplained">
+    <h2> Science Explained</h2>
+    <ul>
+      <li><a href="#">Understanding Cancer at the Cellular Level</a></li>
+      <li><a href="#">hallmarks of cancer — revisiting Hanahan and Weinberg in 2025</a></li>
+      <li><a href="#">how cancer cells spread</a></li>
+      
+    </ul>
+  </section>
+
+  <section id="Researchersjourney">
+    <h2> Researchers journey</h2>
+    <ul>
+      <li><a href="#">How to Stay Motivated During Long Experiments and Rejections</a></li>
+      <li><a href="#">Mental Health in Academia — Breaking the Silence.</a></li>
+      
+    </ul>
+  </section>
+
+  <section id="Innovationandfuture">
+    <h2> Innovation and future</h2>
+    <ul>
+      <li><a href="#">CRISPR, Organoids, and AI — The Next Decade of Cancer Biology</a></li>
+      
+    </ul>
+  </section>
+
+  
+
+  
+
+  <footer>
+    © 2025 FabScientist | Inspiring curiosity through science
+  </footer>
+</body>
+</html>

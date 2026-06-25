@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FABSCIENTIST</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #ffc0cb, #ffdee9);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 🌟 NAVIGATION BAR */
+    nav {
+      background-color:purple ;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700; /* gold hover effect */
+    }
+
+    /* For small screens */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    /* 🌟 HEADER SECTION */
+    h1 {
+      font-size: 3em;
+      color:navy;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+      animation: pop 1s ease-in-out;
+      margin-top: 40px;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h2 {
+      color: #222;
+      background: rgba(255,255,255,0.7);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-top: 10px;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto;
+      border: 8px solid white;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255,255,255,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 400px;
+      max-width: 90%;
+    }
+
+    img:hover {
+      transform: scale(1.1) rotate(3deg);
+      box-shadow: 0 0 40px rgba(255,255,255,0.8);
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    button, input {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: navy;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkblue;
+    }
+
+    input {
+      border: 2px solid navy;
+      text-align: center;
+      width: 200px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 14px;
+      color: #333;
+      background: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🌟 NAVIGATION BAR -->
+  <nav>
+    <div class="logo">FabScientist</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topics.html">Topics</a></li>
+      <li><a href="scienceandphilosophy.html">science and philosophy</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🌟 HEADER CONTENT -->
+  <h1>Welcome to FabScientist</h1>
+  <h2>Where curiosity gets a glow-up!</h2>
+
+  <img src="fabscientist.jpg" alt="FabScientist logo" class="center">
+
+  <p>
+    Here, science meets curiosity and imagination takes the driver’s seat! 
+    From mind-blowing discoveries and the latest tech trends to weird, wonderful, and “wait, is that even possible?” facts — we’ve got it all. 
+    At <strong>FabScientist</strong>, we turn complex research into exciting stories you’ll actually want to share. 
+    Whether you’re a science enthusiast, a curious learner, or just someone who loves fun facts, 
+    get ready to explore the amazing world of science and technology in the most fascinating (and fab!) way possible!
+  </p>
+
+  <input type="text" placeholder="Enter username">
+  <button>Sign Up!</button>
+
+  <footer>
+    © 2025 FabScientist | Inspiring curiosity through science
+  </footer>
+</body>
+</html>
