@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hallmarks of Cancer</title>
+
+<style>
+
+/* ===== CSS ONLY HERE ===== */
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:linear-gradient(to bottom right,#ffc0cb,#ffdee9);
+  color:#222;
+  line-height:1.8;
+}
+
+/* NAVBAR */
+nav{
+  background:purple;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 40px;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+
+nav .logo{
+  color:white;
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+  margin:0;
+  padding:0;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav ul li a:hover{
+  color:gold;
+}
+
+/* ARTICLE BOX */
+.container{
+  width:85%;
+  max-width:900px;
+  margin:50px auto;
+  background:rgba(255,255,255,0.9);
+  border-radius:20px;
+  padding:40px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+h1{
+  text-align:center;
+  color:navy;
+  font-size:40px;
+}
+
+h2{
+  color:purple;
+  border-left:6px solid hotpink;
+  padding-left:12px;
+  margin-top:40px;
+}
+
+/* TEXT */
+p{
+  font-size:18px;
+  text-align:justify;
+}
+
+/* SUBTITLE */
+.subtitle{
+  text-align:center;
+  color:#555;
+  font-style:italic;
+  margin-bottom:30px;
+}
+
+/* QUOTE */
+.quote{
+  background:#fff0f7;
+  border-left:6px solid deeppink;
+  padding:20px;
+  margin:30px 0;
+  border-radius:10px;
+  font-style:italic;
+}
+
+/* LIST */
+ul{
+  padding-left:25px;
+}
+
+li{
+  margin:10px 0;
+}
+
+/* BACK BUTTON */
+.back{
+  display:inline-block;
+  margin-top:40px;
+  padding:12px 25px;
+  background:purple;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.back:hover{
+  background:hotpink;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  nav{
+    flex-direction:column;
+  }
+
+  nav ul{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .container{
+    width:92%;
+    padding:25px;
+  }
+
+  h1{
+    font-size:30px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== HTML STARTS HERE ===== -->
+
+<nav>
+    <div class="logo">FabScientist</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topics.html">Topics</a></li>
+    
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+<div class="container">
+
+<h1>Hallmarks of Cancer — Revisiting Hanahan and Weinberg in 2025</h1>
+
+<p class="subtitle">
+Published on July 2025 • Science Explained
+</p>
+
+<h2>Introduction</h2>
+
+<p>
+Cancer is not a single disease but a diverse collection of disorders that arise when normal cells gradually acquire uncontrolled growth.
+</p>
+
+<p>
+In 2000, Douglas Hanahan and Robert Weinberg introduced the Hallmarks of Cancer framework.
+</p>
+
+<div class="quote">
+"The Hallmarks of Cancer provide a common language for understanding complex disease."
+</div>
+
+<h2>The Hallmarks of Cancer</h2>
+
+<ul>
+<li>Sustaining proliferative signaling</li>
+<li>Evading growth suppressors</li>
+<li>Resisting cell death</li>
+<li>Enabling immortality</li>
+<li>Angiogenesis</li>
+<li>Metastasis</li>
+<li>Metabolic reprogramming</li>
+<li>Immune evasion</li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>
+The Hallmarks of Cancer remains a foundational framework in biology.
+</p>
+
+<a href="../topics.html" class="back">← Back to Topics</a>
+
+</div>
+
+</body>
+</html>
